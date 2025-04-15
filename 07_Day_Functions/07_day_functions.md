@@ -235,7 +235,7 @@ Sometimes we do not know how many arguments the user going to pass. Therefore, w
  ```js
 // Let us access the arguments object
 ​
-function sumAllNums() {
+function sumAllNums(...arguments) {
   console.log(arguments)
 }
 
