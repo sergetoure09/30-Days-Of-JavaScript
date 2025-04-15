@@ -247,7 +247,7 @@ sumAllNums(1, 2, 3, 4)
 ```js
 // function declaration
 ​
-function sumAllNums() {
+function sumAllNums(...arguments) {
   let sum = 0
   for (let i = 0; i < arguments.length; i++) {
     sum += arguments[i]
