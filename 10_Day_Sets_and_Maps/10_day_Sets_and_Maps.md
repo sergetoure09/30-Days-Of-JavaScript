@@ -269,17 +269,12 @@ To find an the difference between two sets can be achieved using filter. Lets fi
 let a = [1, 2, 3, 4, 5]
 let b = [3, 4, 5, 6]
 
-let A = new Set(a)
-let B = new Set(b)
-
-let c = a.filter((num) => !B.has(num))
-let C = new Set(c)
-
-console.log(C)
+let diff = [...a.filter(x => !bset.has(x)), ...b.filter(x => !new Set(a).has(x))];
+let diffSet=new Set(diff)
 ```
-
+console.log(diffSet)
 ```sh
-Set(2) {1, 2}
+Set(3) {1,2,6}
 ```
 
 ## Map
