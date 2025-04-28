@@ -1,2 +1,4 @@
-console.log(countries)
-alert('Open the console and check if the countries has been loaded')
+console.log("%d %s hello world",31,"Serge");
+
+console.error('This is an error message')
+console.error('We all make mistakes')
